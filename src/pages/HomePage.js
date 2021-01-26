@@ -21,6 +21,11 @@ import Postman from '../imgs/Postman.png'
 import Postgresql from '../imgs/Postgresql.png'
 import Python from '../imgs/Python.png'
 import Django from '../imgs/Django.png'
+// import bgimg  from '../bgimg.png'
+
+import Linkedin64 from '../imgs/Linkedin64.png'
+import Github64 from '../imgs/Github64.png'
+
 
 const StylePage = styled.main`
     display: flex;
@@ -32,6 +37,8 @@ const StylePage = styled.main`
 
 const StyleText = styled.p`
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     text-align: center;
     font-size: 20px;
     padding: 15px;
@@ -39,6 +46,13 @@ const StyleText = styled.p`
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: white;
+    width: 65vw;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 `;
 
 const StyleIcons = styled.i`
@@ -59,6 +73,16 @@ export default function HomePage(props) {
         <StylePage> 
             <StyleText>
             <p>I’m a Software Engineer with a background in Healthcare. I use my experience in Healthcare in combination with a Software Engineer to make working and communicating with my team better. My goal is to be able to work with my team and to finish projects in a timely manner. By combining these two skills, I will achieve my goals.</p>
+            <br/>
+
+            <a href='https://www.linkedin.com/in/alyssa-goodhue/'>
+            <img id='Linkedin64' src={Linkedin64} alt="Linkedin64"/>
+            </a>
+            <a href='https://github.com/agoody44'>
+            <img id='Github64' src={Github64} alt="Github64"/>
+            </a>
+
+
             </StyleText>
             <StyleIcons>
             <h1>Skills</h1>
@@ -118,13 +142,13 @@ export default function HomePage(props) {
             <a href='https://goldendoodles.herokuapp.com/goldendoodles'>
             <img src={Goldendoodle} alt="Goldendoodles"/>
             </a>
-            <a href=''>
+            <a href='https://trivia-game-flame.vercel.app/'>
             <img src={Trivia} alt="Trivia" />
             </a>
-            <a href=''>
+            <a href='https://pokemon-project-3-front.herokuapp.com/'>
             <img src={Pokemon} alt="Pokemon" />
             </a>
-            <a href=''>
+            <a href='https://savings-calculator-8189.herokuapp.com/'>
             <img src={Savings} alt="Savings" />
             </a>
         </StylePage>

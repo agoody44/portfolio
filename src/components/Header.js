@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 import Profile from '../imgs/Profile.png'
 import headerbg from '../imgs/headerbg.png'
+
+
 
 const StyledHeader = styled.header`
     display: flex;
@@ -21,9 +23,9 @@ const StyledHeader = styled.header`
         li {
             margin-left: 15px;
         }
+
     }
 `;
-
 
 
     export default function Header(props) {
