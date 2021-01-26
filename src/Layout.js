@@ -11,15 +11,12 @@ import HomePage from './pages/HomePage';
 
 const StyledLayout = styled.div`
     display: flex;
+    flex-wrap: nowrap; 
     flex-direction: column;
     min-height: 100vh;
-
-    main {
-      flex-grow: 1;
-    }
 `;
 
-function App() {
+function Layout() {
   return (
     <StyledLayout>
       <Header />
@@ -30,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Layout;

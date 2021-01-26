@@ -11,7 +11,7 @@ import JQuery from '../imgs/JQuery.png'
 import Github2 from '../imgs/Github2.png'
 import Git from '../imgs/Git.png'
 import Nodejs from '../imgs/Nodejs.png'
-import Mongodb from '../imgs/Mongodb.png'
+import Mongodb2 from '../imgs/Mongodb2.png'
 import Ruby from '../imgs/Ruby.png'
 import Rails from '../imgs/Rails.png'
 import Bootstrap from '../imgs/Bootstrap.png'
@@ -26,14 +26,42 @@ const StylePage = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+`;
+
+const StyleText = styled.p`
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: white;
+`;
+
+const StyleIcons = styled.i`
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: white;
+    h1 {
+        text-align: center;
+    }
+
 `;
 
 
 export default function HomePage(props) {
     return(
         <StylePage> 
+            <StyleText>
             <p>I’m a Software Engineer with a background in Healthcare. I use my experience in Healthcare in combination with a Software Engineer to make working and communicating with my team better. My goal is to be able to work with my team and to finish projects in a timely manner. By combining these two skills, I will achieve my goals.</p>
+            </StyleText>
+            <StyleIcons>
+            <h1>Skills</h1>
             <Link>
             <img src={HTML5} alt="HTML5" />
             </Link>
@@ -56,7 +84,7 @@ export default function HomePage(props) {
             <img src={Nodejs} alt="Nodejs" />
             </Link>
             <Link>
-            <img src={Mongodb} alt="Mongodb" />
+            <img src={Mongodb2} alt="Mongodb2" />
             </Link>
             <Link>
             <img src={Ruby} alt="Ruby" />
@@ -85,20 +113,20 @@ export default function HomePage(props) {
             <Link>
             <img src={Django} alt="Django" />
             </Link>
+            </StyleIcons>
 
-
-            <Link to='https://goldendoodles.herokuapp.com/goldendoodles'>
+            <a href='https://goldendoodles.herokuapp.com/goldendoodles'>
             <img src={Goldendoodle} alt="Goldendoodles"/>
-            </Link>
-            <Link to=''>
+            </a>
+            <a href=''>
             <img src={Trivia} alt="Trivia" />
-            </Link>
-            <Link>
+            </a>
+            <a href=''>
             <img src={Pokemon} alt="Pokemon" />
-            </Link>
-            <Link>
+            </a>
+            <a href=''>
             <img src={Savings} alt="Savings" />
-            </Link>
+            </a>
         </StylePage>
     );
 };

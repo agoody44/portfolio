@@ -1,17 +1,19 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Profile from '../imgs/Profile.png'
-import Headerimg from '../imgs/Headerimg.png'
+import headerbg from '../imgs/headerbg.png'
 
 const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
-    background-color: #717171;
-    color: #000000;
+    color: #ffffff;
     box-shadow: 1px 1px 5px 3px #808080;
-    background-image: url(${Headerimg});
+    background-image: url(${headerbg});
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100%; */
     ul {
         display: flex;
         align-items: center;
@@ -21,6 +23,7 @@ const StyledHeader = styled.header`
         }
     }
 `;
+
 
 
     export default function Header(props) {
