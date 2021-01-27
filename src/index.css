@@ -5,10 +5,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./imgs/bgimg2.jpg);
+  background-image: url(./imgs/bgimg3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: rgb(164, 164, 164); */
+  /* background-color: rgba(24, 24, 24, 0.571); */
 }
 
 

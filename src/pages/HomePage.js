@@ -40,19 +40,14 @@ const StyleText = styled.p`
     flex-wrap: wrap;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     font-size: 20px;
-    padding: 15px;
+    padding: 10px;
     margin: 15px;
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: white;
     width: 65vw;
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
 `;
 
 const StyleIcons = styled.i`
@@ -64,8 +59,8 @@ const StyleIcons = styled.i`
     h1 {
         text-align: center;
     }
-
 `;
+
 
 
 export default function HomePage(props) {

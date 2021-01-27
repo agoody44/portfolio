@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 import Profile from '../imgs/Profile.png'
-import headerbg from '../imgs/headerbg.png'
+import Helloworld3 from '../imgs/Helloworld3.png'
 
 
 
@@ -11,17 +11,19 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     padding: 0 15px;
     color: #ffffff;
-    box-shadow: 1px 1px 5px 3px #808080;
-    background-image: url(${headerbg});
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-size: 100%; */
+    box-shadow: 1px 1px 1px 1px #ffffff;
+    background-image: url(${Helloworld3});
+    background-size: 100% 100%;
     ul {
         display: flex;
         align-items: center;
         list-style: none;
         li {
-            margin-left: 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            text-shadow: #000000 5px 0 10px;
+            padding: 0.5em;
         }
 
     }
