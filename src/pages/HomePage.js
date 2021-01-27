@@ -47,7 +47,7 @@ const StyleText = styled.p`
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: white;
-    width: 65vw;
+    width: 60vw;
 `;
 
 const StyleIcons = styled.i`
@@ -68,7 +68,6 @@ export default function HomePage(props) {
         <StylePage> 
             <StyleText>
             <p>I’m a Software Engineer with a background in Healthcare. I use my experience in Healthcare in combination with a Software Engineer to make working and communicating with my team better. My goal is to be able to work with my team and to finish projects in a timely manner. By combining these two skills, I will achieve my goals.</p>
-            <br/>
 
             <a href='https://www.linkedin.com/in/alyssa-goodhue/'>
             <img id='Linkedin64' src={Linkedin64} alt="Linkedin64"/>
