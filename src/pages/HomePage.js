@@ -79,7 +79,7 @@ export default function HomePage(props) {
 
             </StyleText>
             <StyleIcons>
-            <h1>Technologies used</h1>
+            <h1>Technologies that I use</h1>
             <Link>
             <img src={HTML5} alt="HTML5" />
             </Link>
