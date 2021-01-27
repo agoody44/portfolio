@@ -61,6 +61,38 @@ const StyleIcons = styled.i`
     }
 `;
 
+const StyleProjects = styled.main`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    .goldendoodle {
+        border: 2px solid #000000;
+        border-radius: 5px;
+        background-color: white;
+        margin: 15px;
+    }
+    .trivia {
+        border: 2px solid #000000;
+        border-radius: 5px;
+        background-color: white;
+        margin: 15px;
+    }
+    .pokemon {
+        border: 2px solid #000000;
+        border-radius: 5px;
+        background-color: white;
+        margin: 15px;
+    }
+    .savings {
+        border: 2px solid #000000;
+        border-radius: 5px;
+        background-color: white;
+        margin: 15px;
+    }
+`;
+
 
 
 export default function HomePage(props) {
@@ -132,19 +164,21 @@ export default function HomePage(props) {
             <img src={Django} alt="Django" />
             </Link>
             </StyleIcons>
-
+            
+            <StyleProjects>
             <a href='https://goldendoodles.herokuapp.com/goldendoodles'>
-            <img src={Goldendoodle} alt="Goldendoodles"/>
+            <img src={Goldendoodle} alt="Goldendoodles" class='goldendoodle'id='links'/>
             </a>
             <a href='https://trivia-game-flame.vercel.app/'>
-            <img src={Trivia} alt="Trivia" />
+            <img src={Trivia} alt="Trivia" class='trivia' id='links' />
             </a>
             <a href='https://pokemon-project-3-front.herokuapp.com/'>
-            <img src={Pokemon} alt="Pokemon" />
+            <img src={Pokemon} alt="Pokemon" class='pokemon' id='links' />
             </a>
             <a href='https://savings-calculator-8189.herokuapp.com/'>
-            <img src={Savings} alt="Savings" />
+            <img src={Savings} alt="Savings" class='savings' id='links' />
             </a>
+            </StyleProjects>
         </StylePage>
     );
 };
