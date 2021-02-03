@@ -67,7 +67,7 @@ const StyleProjects = styled.main`
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
-    .goldendoodle {
+    .goldendoodle,.GDP {
         border: 2px solid #000000;
         border-radius: 5px;
         background-color: white;
@@ -99,7 +99,7 @@ export default function HomePage(props) {
     return(
         <StylePage> 
             <StyleText>
-            <p>I’m a Software Engineer with a background in Healthcare. I use my experience in Healthcare in combination with a Software Engineer to make working and communicating with my team better. My goal is to be able to work with my team and to finish projects in a timely manner. By combining these two skills, I will achieve my goals.</p>
+            <p>I’m a Software Engineer with a background in Healthcare. My previous industry relies on immense attention to detail, one which I bring forward to development to ensure quality and sustainable code.</p>
 
             <a href='https://www.linkedin.com/in/alyssa-goodhue/'>
             <img id='Linkedin64' src={Linkedin64} alt="Linkedin64"/>
@@ -169,15 +169,19 @@ export default function HomePage(props) {
             <a href='https://goldendoodles.herokuapp.com/goldendoodles'>
             <img src={Goldendoodle} alt="Goldendoodles" class='goldendoodle'id='links'/>
             </a>
+            <p class='GDP'>A full-stack application that utilized Node.js with Express and MongoDB.Shows information about Goldendoodle generations and lets you share your dog on the website.</p>
             <a href='https://trivia-game-flame.vercel.app/'>
             <img src={Trivia} alt="Trivia" class='trivia' id='links' />
             </a>
+            <p>A trivia game about greek and roman mythology using open trivia database API.That utilizes JavaScript , CSS, HTML, and Fetch.</p>
             <a href='https://pokemon-project-3-front.herokuapp.com/'>
             <img src={Pokemon} alt="Pokemon" class='pokemon' id='links' />
             </a>
+            <p>A pokemon database app using fetch calls to Pokemon API.With a React front-end and Node.js back-end.</p>
             <a href='https://savings-calculator-8189.herokuapp.com/'>
             <img src={Savings} alt="Savings" class='savings' id='links' />
             </a>
+            <p>A savings calculator that will track daily, weekly, and monthly budgets.This project that was self taught over a week that utilizes Python and Django.</p>
             </StyleProjects>
         </StylePage>
     );
