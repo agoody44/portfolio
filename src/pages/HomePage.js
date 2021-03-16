@@ -26,6 +26,9 @@ import Django from '../imgs/Django.png'
 import Linkedin64 from '../imgs/Linkedin64.png'
 import Github64 from '../imgs/Github64.png'
 
+// import ImageSlider from "../slider/ImageSlider";
+// import { SliderData } from "../slider/SliderData";
+
 
 const StylePage = styled.main`
     display: flex;
@@ -63,34 +66,50 @@ const StyleIcons = styled.i`
 
 const StyleProjects = styled.main`
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 15px;
-    .goldendoodle,.GDP {
-        border: 2px solid #000000;
-        border-radius: 5px;
-        background-color: white;
-        margin: 15px;
+
+    .card {
+    border: 2px solid #555;
+    background-color: rgb(237, 237, 237);
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 18px;
+    width: 55rem
     }
-    .trivia {
-        border: 2px solid #000000;
-        border-radius: 5px;
-        background-color: white;
-        margin: 15px;
+    .card-img-top{
+    border: 2px solid;
+    border-radius: 6px;
     }
-    .pokemon {
-        border: 2px solid #000000;
-        border-radius: 5px;
-        background-color: white;
-        margin: 15px;
+    .card-text,
+    .card-title{
+    text-align: center;
     }
-    .savings {
-        border: 2px solid #000000;
-        border-radius: 5px;
-        background-color: white;
-        margin: 15px;
+    .grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
     }
+    .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+    }
+    .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    }
+    .box { margin: 20px; }
+    /* .box1 { background-color: red; }
+    .box2 { background-color: orange; }
+    .box3 { background-color: purple; }
+    .box4 { background-color: grey; } */
 `;
 
 
@@ -164,24 +183,61 @@ export default function HomePage(props) {
             <img src={Django} alt="Django" />
             </Link>
             </StyleIcons>
+
+            {/* <ImageSlider slides={SliderData} /> */}
             
             <StyleProjects>
-            <a href='https://goldendoodles.herokuapp.com/goldendoodles' target="_blank" rel="noreferrer">
-            <img src={Goldendoodle} alt="Goldendoodles" class='goldendoodle'id='links'/>
-            </a>
-            {/* <p class='GDP'>A full-stack application that utilized Node.js with Express and MongoDB.Shows information about Goldendoodle generations and lets you share your dog on the website.</p> */}
-            <a href='https://trivia-game-flame.vercel.app/' target="_blank" rel="noreferrer">
-            <img src={Trivia} alt="Trivia" class='trivia' id='links' />
-            </a>
-            {/* <p>A trivia game about greek and roman mythology using open trivia database API.That utilizes JavaScript , CSS, HTML, and Fetch.</p> */}
-            <a href='https://pokemon-project-3-front.herokuapp.com/' target="_blank" rel="noreferrer">
-            <img src={Pokemon} alt="Pokemon" class='pokemon' id='links' />
-            </a>
-            {/* <p>A pokemon database app using fetch calls to Pokemon API.With a React front-end and Node.js back-end.</p> */}
-            <a href='https://savings-calculator-8189.herokuapp.com/' target="_blank" rel="noreferrer">
-            <img src={Savings} alt="Savings" class='savings' id='links' />
-            </a>
-            {/* <p>A savings calculator that will track daily, weekly, and monthly budgets.This project that was self taught over a week that utilizes Python and Django.</p> */}
+            <div class="grid2x2">
+
+            <div class="box box1">
+                <div class="card">
+                    <a href='https://goldendoodles.herokuapp.com/goldendoodles' target="_blank" rel="noreferrer">
+                    <img class="card-img-top" src={Goldendoodle} alt="Goldendoodles" id='links'/>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Goodledoodle Project</h5>
+                            <p class="card-text">A full-stack application that utilized Node.js with Express and MongoDB.Shows information about Goldendoodle generations and lets you share your dog on the website.</p>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="box box2">
+                <div class="card">
+                    <a href='https://trivia-game-flame.vercel.app/' target="_blank" rel="noreferrer">
+                    <img class="card-img-top" src={Trivia} alt="Trivia" id='links' />
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Trivia</h5>
+                        <p class="card-text">A trivia game about greek and roman mythology using open trivia database API.That utilizes JavaScript , CSS, HTML, and Fetch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box3">
+                <div class="card">
+                    <a href='https://pokemon-project-3-front.herokuapp.com/' target="_blank" rel="noreferrer">
+                    <img class="card-img-top" src={Pokemon} alt="Pokemon" id='links' />
+                    </a>
+                    <div class="card-body">
+                            <h5 class="card-title">Pokemon</h5>
+                            <p class="card-text">A pokemon database app using fetch calls to Pokemon API.With a React front-end and Node.js back-end.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="box box4">
+                <div class="card">
+                    <a href='https://savings-calculator-8189.herokuapp.com/' target="_blank" rel="noreferrer">
+                    <img class="card-img-top" src={Savings} alt="Savings" id='links' />
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Savings Calculator</h5>
+                        <p class="card-text">A savings calculator that will track daily, weekly, and monthly budgets.This project that was self taught over a week that utilizes Python and Django.</p>
+                    </div>
+                </div>
+            </div>    
+            </div>
+
             </StyleProjects>
         </StylePage>
     );
