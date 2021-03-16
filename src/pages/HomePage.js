@@ -26,9 +26,6 @@ import Django from '../imgs/Django.png'
 import Linkedin64 from '../imgs/Linkedin64.png'
 import Github64 from '../imgs/Github64.png'
 
-// import ImageSlider from "../slider/ImageSlider";
-// import { SliderData } from "../slider/SliderData";
-
 
 const StylePage = styled.main`
     display: flex;
@@ -49,7 +46,7 @@ const StyleText = styled.p`
     margin: 15px;
     border: 1px solid #000000;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(237, 237, 237);
     width: 60vw;
 `;
 
@@ -58,7 +55,7 @@ const StyleIcons = styled.i`
     margin: 15px;
     border: 1px solid #000000;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(237, 237, 237);
     h1 {
         text-align: center;
     }

@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
     align-items: center;
     justify-content: center; */
     padding: 0 15px;
-    background-color: #454545;
+    background-color: #000000;
     color: #ffffff;
     p {
         text-align: center;
