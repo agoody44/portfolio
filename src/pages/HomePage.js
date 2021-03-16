@@ -196,7 +196,11 @@ export default function HomePage(props) {
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Goodledoodle Project</h5>
-                            <p class="card-text">A full-stack application that utilized Node.js with Express and MongoDB.Shows information about Goldendoodle generations and lets you share your dog on the website.</p>
+                            <p class="card-text">Goldendoodle Generations: Shows information about Goldendoodle generations and lets you share your dog on the website.
+                            A full-stack application that utilized Node.js with Express and MongoDB.
+                            Made RESTful API fetch calls to an Express, MongoDB, Node.js backend handling all create, read, update, delete (CRUD) operations. Also has authentication.
+                            Made frequent commits using Git control throughout the production of the application, and deployed using Heroku.
+                            </p>
                     </div>
                 </div>
             </div>    
@@ -208,7 +212,11 @@ export default function HomePage(props) {
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Trivia</h5>
-                        <p class="card-text">A trivia game about greek and roman mythology using open trivia database API.That utilizes JavaScript , CSS, HTML, and Fetch.</p>
+                        <p class="card-text">A trivia game about greek and roman mythology using open trivia database API.
+                        Utilized JavaScript, CSS, HTML, and Fetch.
+                        Styled using flex-box.
+                        Used Open Trivia Database to pull questions and answers. Made frequent commits using Git control throughout the production of the application, and deployed using Heroku.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -220,7 +228,12 @@ export default function HomePage(props) {
                     </a>
                     <div class="card-body">
                             <h5 class="card-title">Pokemon</h5>
-                            <p class="card-text">A pokemon database app using fetch calls to Pokemon API.With a React front-end and Node.js back-end.</p>
+                            <p class="card-text">Created a Pokemon database app using fetch calls to Pokemon API.
+                            Used React.js and components to serve the front-end.
+                            Served the back-end of the application using Node.js.
+                            Styled and created the visual aspects using Bootstrap, HTML5, and CSS3.
+                            Made frequent commits using Git control throughout the production of the application, and deployed using Heroku.
+                            </p>
                     </div>
                 </div> 
             </div>
@@ -232,7 +245,11 @@ export default function HomePage(props) {
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Savings Calculator</h5>
-                        <p class="card-text">A savings calculator that will track daily, weekly, and monthly budgets.This project that was self taught over a week that utilizes Python and Django.</p>
+                        <p class="card-text">Created a savings calculator that will track daily, weekly, and monthly budgets.
+                        Final project that was self taught over a week that utilizes Python and Django.
+                        Utilized Git control during the production of the application with frequent commits until deployment.
+                        Deployed online using Heroku.
+                        </p>
                     </div>
                 </div>
             </div>    
