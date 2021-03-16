@@ -192,7 +192,7 @@ export default function HomePage(props) {
                     <img class="card-img-top" src={Goldendoodle} alt="Goldendoodles" id='links'/>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">Goodledoodle Project</h5>
+                        <h5 class="card-title">Goldendoodle Generations</h5>
                             <p class="card-text">Goldendoodle Generations: Shows information about Goldendoodle generations and lets you share your dog on the website.
                             A full-stack application that utilized Node.js with Express and MongoDB.
                             Made RESTful API fetch calls to an Express, MongoDB, Node.js backend handling all create, read, update, delete (CRUD) operations. Also has authentication.
@@ -208,11 +208,11 @@ export default function HomePage(props) {
                     <img class="card-img-top" src={Trivia} alt="Trivia" id='links' />
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">Trivia</h5>
+                        <h5 class="card-title">Mythology Trivia</h5>
                         <p class="card-text">A trivia game about greek and roman mythology using open trivia database API.
                         Utilized JavaScript, CSS, HTML, and Fetch.
                         Styled using flex-box.
-                        Used Open Trivia Database to pull questions and answers. Made frequent commits using Git control throughout the production of the application, and deployed using Heroku.
+                        Used Open Trivia Database to pull questions and answers. Made frequent commits using Git control throughout the production of the application, and deployed using Vercel.
                         </p>
                     </div>
                 </div>
@@ -224,7 +224,7 @@ export default function HomePage(props) {
                     <img class="card-img-top" src={Pokemon} alt="Pokemon" id='links' />
                     </a>
                     <div class="card-body">
-                            <h5 class="card-title">Pokemon</h5>
+                            <h5 class="card-title">Pokemon Database</h5>
                             <p class="card-text">Created a Pokemon database app using fetch calls to Pokemon API.
                             Used React.js and components to serve the front-end.
                             Served the back-end of the application using Node.js.
