@@ -193,7 +193,7 @@ export default function HomePage(props) {
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Goldendoodle Generations</h5>
-                            <p class="card-text">Goldendoodle Generations: Shows information about Goldendoodle generations and lets you share your dog on the website.
+                            <p class="card-text">Shows information about Goldendoodle generations and lets you share your dog on the website.
                             A full-stack application that utilized Node.js with Express and MongoDB.
                             Made RESTful API fetch calls to an Express, MongoDB, Node.js backend handling all create, read, update, delete (CRUD) operations. Also has authentication.
                             Made frequent commits using Git control throughout the production of the application, and deployed using Heroku.
