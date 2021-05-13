@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Goldendoodle from '../imgs/Goldendoodle.png'
-import Trivia from '../imgs/Trivia.png'
+import MERNshop from '../imgs/MERNshop.png'
 import Pokemon from '../imgs/Pokemon.png'
 import Savings from '../imgs/Savings.png'
 import HTML5 from '../imgs/HTML5.png'
@@ -204,15 +204,12 @@ export default function HomePage(props) {
 
             <div class="box box2">
                 <div class="card">
-                    <a href='https://trivia-game-flame.vercel.app/' target="_blank" rel="noreferrer">
-                    <img class="card-img-top" src={Trivia} alt="Trivia" id='links' />
+                    <a href='https://console-shop.herokuapp.com/' target="_blank" rel="noreferrer">
+                    <img class="card-img-top" src={MERNshop} alt="MERNshop" id='links' />
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">Mythology Trivia</h5>
-                        <p class="card-text">A trivia game about greek and roman mythology using open trivia database API.
-                        Utilized JavaScript, CSS, HTML, and Fetch.
-                        Styled using flex-box.
-                        Used Open Trivia Database to pull questions and answers. Made frequent commits using Git control throughout the production of the application, and deployed using Vercel.
+                        <h5 class="card-title">Ecommerce MERN Shop</h5>
+                            <p class="card-text">Used React.js and components to serve the front-end. Used Redux for state management. Served the back-end of the application using Node.js, Express and MongoDB. Created REST APIs with Express and use these endpoints in the React frontend to interact with the backend. Option to add items or remove items from the cart. Displays the total bill of the cart and update it as soon as the cart is updated by the user.
                         </p>
                     </div>
                 </div>
