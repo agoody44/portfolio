@@ -209,7 +209,7 @@ export default function HomePage(props) {
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Ecommerce MERN Shop</h5>
-                            <p class="card-text">Used React.js and components to serve the front-end. Used Redux for state management. Served the back-end of the application using Node.js, Express and MongoDB. Created REST APIs with Express and use these endpoints in the React frontend to interact with the backend. Option to add items or remove items from the cart. Displays the total bill of the cart and update it as soon as the cart is updated by the user.
+                            <p class="card-text">Used React.js and components to serve the front-end. Used Redux for state management. Served the back-end of the application using Node.js, Express and MongoDB. Created REST APIs with Express and used these endpoints in the React frontend to interact with the backend. Option to add items or remove items from the cart. Displays the total bill of the cart and update it as soon as the cart is updated by the user.
                         </p>
                     </div>
                 </div>
